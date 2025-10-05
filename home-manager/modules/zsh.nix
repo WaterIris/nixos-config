@@ -9,30 +9,30 @@
         truncation_length = 0;
         truncate_to_repo = false;
       };
+
       character = {
-        success_symbol = "[](#89b4fa)";
-        error_symbol = "[](#f38ba8)";
+        success_symbol = ">";
+        error_symbol = ">";
       };
+
       hostname = {
-        ssh_symbol = " ";
+        ssh_symbol = " ";
       };
 
       git_branch = {
         symbol = " ";
       };
 
-      git_commit = {
-        tag_symbol = " ";
+      python = {
+	symbol = " ";
       };
 
       format = lib.concatStrings [
       "$hostname"
       "$directory"
       "$git_branch"
-      "$git_commit"
-      "$git_state"
-      "$git_metrics"
       "$git_status"
+      "$python"
       # "$nix_shell"
       "$line_break"
       "$character"
