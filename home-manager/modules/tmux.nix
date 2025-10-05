@@ -1,4 +1,5 @@
 {pkgs, ...}:
+
 {
   programs.tmux = {
     enable = true;
@@ -26,6 +27,8 @@
       # don't rename windows automatically
       set-option -g allow-rename off
 
+      # enable vi mode keys
+      set-window-option -g mode-keys vi
     '';
     plugins = with pkgs; [
       {
@@ -33,4 +36,5 @@
       }
     ];
   };
+
 }
