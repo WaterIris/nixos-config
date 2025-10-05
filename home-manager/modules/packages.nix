@@ -1,7 +1,7 @@
 {pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
-    neovim
+    inputs.nixvim.packages.${system}.default
     kitty
     tmux
     direnv
