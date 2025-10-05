@@ -4,8 +4,6 @@
     inputs.nixvim.packages.${system}.default
     kitty
     tmux
-    direnv
     ripgrep
-    feh
   ];
 }

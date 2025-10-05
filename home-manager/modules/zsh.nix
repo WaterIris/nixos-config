@@ -55,6 +55,13 @@
     enableZshIntegration = true;
   };
 
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;
+    enableZshIntegration = true;
+    silent = true;
+  };
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;
