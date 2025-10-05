@@ -7,12 +7,14 @@
     # Home manager
     home-manager.url = "github:nix-community/home-manager/release-25.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    nixvim.url = "github:WaterIris/nixvim-conf";
   };
 
   outputs = {
     self,
     nixpkgs,
     home-manager,
+    nixvim,
     ...
   } @ inputs: let
     inherit (self) outputs;
